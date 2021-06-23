@@ -1,8 +1,14 @@
+// Copyright (c) 2017-present Mattermost, Inc. All Rights Reserved.
+// See License for license information.
+
 package main
 
 import (
+	"fmt"
+	"net/url"
 	"reflect"
 
+	"github.com/mattermost/mattermost-server/v5/model"
 	"github.com/pkg/errors"
 )
 
@@ -18,6 +24,25 @@ import (
 // If you add non-reference types to your configuration struct, be sure to rewrite Clone as a deep
 // copy appropriate for your types.
 type configuration struct {
+	MattJamURL               string
+	MattJamJWT               bool
+	MattJamEmbedded          bool
+	MattJamAppID             string
+	MattJamAppSecret         string
+	MattJamLinkValidTime     int
+	MattJamNamingScheme      string
+	MattJamCompatibilityMode bool
+}
+
+const publicMattJamServerURL = "figma.com/figjam/"
+
+// GetMattJamURL return the currently configured MattJamURL or the URL from the
+// public servers provided by MattJam.
+func (c *configuration) GetMattJamURL() string {
+	if len(c.MattJamURL) > 0 {
+		return c.MattJamURL
+	}
+	return publicMattJamServerURL
 }
 
 // Clone shallow copies the configuration. Your implementation may require a deep copy if
@@ -25,6 +50,30 @@ type configuration struct {
 func (c *configuration) Clone() *configuration {
 	var clone = *c
 	return &clone
+}
+
+// IsValid checks if all needed fields are set.
+func (c *configuration) IsValid() error {
+	if len(c.MattJamURL) > 0 {
+		_, err := url.Parse(c.MattJamURL)
+		if err != nil {
+			return fmt.Errorf("error invalid mattjamURL")
+		}
+	}
+
+	if c.MattJamJWT {
+		if len(c.MattJamAppID) == 0 {
+			return fmt.Errorf("error no MattJam app ID was provided to use with JWT")
+		}
+		if len(c.MattJamAppSecret) == 0 {
+			return fmt.Errorf("error no MattJam app secret provided to use with JWT")
+		}
+		if c.MattJamLinkValidTime < 1 {
+			c.MattJamLinkValidTime = 30
+		}
+	}
+
+	return nil
 }
 
 // getConfiguration retrieves the active configuration under lock, making it safe to use
@@ -65,6 +114,7 @@ func (p *Plugin) setConfiguration(configuration *configuration) {
 		panic("setConfiguration called with the existing configuration")
 	}
 
+	p.API.PublishWebSocketEvent(configChangeEvent, nil, &model.WebsocketBroadcast{})
 	p.configuration = configuration
 }
 

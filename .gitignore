@@ -1,10 +1,15 @@
-dist/
+dist
 
 # Mac
 .DS_Store
 
 # VSCode
-.vscode/
+.vscode
 
-# Jetbrains
-.idea/
+assets/i18n/translate.*.json
+
+.eslintcache
+junit.xml
+webapp/node_modules
+webapp/node_modules/*
+

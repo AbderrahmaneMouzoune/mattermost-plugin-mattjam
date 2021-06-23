@@ -1,1 +1,14 @@
-{}
+{
+    "mattjam.close": "Close",
+    "mattjam.creator-has-start-jam": "{creator} has started a meeting",
+    "mattjam.default-title": "MattJam Meeting",
+    "mattjam.join-meeting": "JOIN MEETING",
+    "mattjam.link-valid-until": "Meeting link valid until: ",
+    "mattjam.maximize": "Maximize",
+    "mattjam.meeting-id": "Meeting ID: ",
+    "mattjam.minimize": "Minimize",
+    "mattjam.move-down": "Move down",
+    "mattjam.move-up": "Move up",
+    "mattjam.open-in-new-tab": "Open in new tab",
+    "mattjam.personal-meeting-id": "Personal Meeting ID (PMI): "
+}

@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Conference should render and initialize the conference interface 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "8px",
+        "display": "flex",
+        "height": 288,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#00000077",
+        "bottom": "8px",
+        "color": "white",
+        "display": "flex",
+        "fontSize": "48px",
+        "height": 288,
+        "justifyContent": "center",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1200,
+      }
+    }
+  >
+    <i
+      className="fa fa-spinner fa-fw fa-pulse spinner"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": "270px",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Move up"
+      id="mattjam.move-up"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <FormattedMessage
+      defaultMessage="Maximize"
+      id="mattjam.maximize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
+
+exports[`Conference should render null if the post type is null 1`] = `""`;
+
+exports[`Conference should show the correct buttons depending on the state should have down, open outside, maximize and close buttons 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "",
+        "display": "flex",
+        "height": 288,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "8px",
+        "width": 384,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#00000077",
+        "bottom": "",
+        "color": "white",
+        "display": "flex",
+        "fontSize": "48px",
+        "height": 288,
+        "justifyContent": "center",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "8px",
+        "top": "8px",
+        "width": 384,
+        "zIndex": 1200,
+      }
+    }
+  >
+    <i
+      className="fa fa-spinner fa-fw fa-pulse spinner"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": "",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "8px",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Move down"
+      id="mattjam.move-down"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <FormattedMessage
+      defaultMessage="Maximize"
+      id="mattjam.maximize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
+
+exports[`Conference should show the correct buttons depending on the state should have open outside, minimize and close buttons 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "8px",
+        "display": "flex",
+        "height": 10,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 10,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "background": "black",
+        "height": "100%",
+        "left": 0,
+        "opacity": 0.7,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 1000,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#00000077",
+        "bottom": "8px",
+        "color": "white",
+        "display": "flex",
+        "fontSize": "48px",
+        "height": 10,
+        "justifyContent": "center",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 10,
+        "zIndex": 1200,
+      }
+    }
+  >
+    <i
+      className="fa fa-spinner fa-fw fa-pulse spinner"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": "-8px",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Minimize"
+      id="mattjam.minimize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
+
+exports[`Conference should show the correct buttons depending on the state should have up, open outside, maximize and close buttons 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "8px",
+        "display": "flex",
+        "height": 288,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#00000077",
+        "bottom": "8px",
+        "color": "white",
+        "display": "flex",
+        "fontSize": "48px",
+        "height": 288,
+        "justifyContent": "center",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1200,
+      }
+    }
+  >
+    <i
+      className="fa fa-spinner fa-fw fa-pulse spinner"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": "270px",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Move up"
+      id="mattjam.move-up"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <FormattedMessage
+      defaultMessage="Maximize"
+      id="mattjam.maximize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
+
+exports[`Conference should show the the loading spinner depending on the state should not show loading 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "8px",
+        "display": "flex",
+        "height": 288,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "bottom": "270px",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Move up"
+      id="mattjam.move-up"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <FormattedMessage
+      defaultMessage="Maximize"
+      id="mattjam.maximize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
+
+exports[`Conference should show the the loading spinner depending on the state should show loading 1`] = `
+<Fragment>
+  <div
+    id="mattjamMeet"
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#474747",
+        "bottom": "8px",
+        "display": "flex",
+        "height": 288,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1100,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "background": "#00000077",
+        "bottom": "8px",
+        "color": "white",
+        "display": "flex",
+        "fontSize": "48px",
+        "height": 288,
+        "justifyContent": "center",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "8px",
+        "top": "",
+        "width": 384,
+        "zIndex": 1200,
+      }
+    }
+  >
+    <i
+      className="fa fa-spinner fa-fw fa-pulse spinner"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": "270px",
+        "color": "white",
+        "cursor": "pointer",
+        "fontSize": "18px",
+        "opacity": 0.85,
+        "position": "absolute",
+        "right": "10px",
+        "top": "",
+        "zIndex": 1200,
+      }
+    }
+  >
+    <FormattedMessage
+      defaultMessage="Move up"
+      id="mattjam.move-up"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <FormattedMessage
+      defaultMessage="Maximize"
+      id="mattjam.maximize"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+    <a
+      href="http://test-meeting-link/test#config.callDisplayName=\\"Test topic\\""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+      target="_blank"
+    >
+      <FormattedMessage
+        defaultMessage="Open in new tab"
+        id="mattjam.open-in-new-tab"
+        values={Object {}}
+      >
+        <Component />
+      </FormattedMessage>
+    </a>
+    <FormattedMessage
+      defaultMessage="Close"
+      id="mattjam.close"
+      values={Object {}}
+    >
+      <Component />
+    </FormattedMessage>
+  </div>
+</Fragment>
+`;
