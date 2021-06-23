@@ -1,41 +1,39 @@
-# Plugin Starter Template [![CircleCI branch](https://img.shields.io/circleci/project/github/mattermost/mattermost-plugin-starter-template/master.svg)](https://circleci.com/gh/mattermost/mattermost-plugin-starter-template)
 
-This plugin serves as a starting point for writing a Mattermost plugin. Feel free to base your own plugin off this repository.
+# MattJam [![CircleCI branch](https://img.shields.io/circleci/project/github/mattermost/mattermost-plugin-starter-template/master.svg)](https://circleci.com/gh/mattermost/mattermost-plugin-starter-template)
 
-To learn more about plugins, see [our plugin documentation](https://developers.mattermost.com/extend/plugins/).
 
-## Getting Started
-Use GitHub's template feature to make a copy of this repository by clicking the "Use this template" button.
+The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
+directly in the chat or during call sessions. MattJam provides a fun and easy way 
+to collaborate during team projects and animate working and brainstorming sessions even in remote. 
 
-Alternatively shallow clone the repository matching your plugin name:
-```
-git clone --depth 1 https://github.com/mattermost/mattermost-plugin-starter-template com.example.my-plugin
-```
+TABLE OF CONTENTS
+------------------
 
-Note that this project uses [Go modules](https://github.com/golang/go/wiki/Modules). Be sure to locate the project outside of `$GOPATH`.
+* Introduction
+* Full Description
+* Status
+* Requirements
+* Instructions
+* Configuration
+* Wanted Collaboration
+* Versions
+* FAQ
+* Copyright
 
-Edit the following files:
-1. `plugin.json` with your `id`, `name`, and `description`:
-```
-{
-    "id": "com.example.my-plugin",
-    "name": "My Plugin",
-    "description": "A plugin to enhance Mattermost."
-}
-```
+## Introduction
 
-2. `go.mod` with your Go module path, following the `<hosting-site>/<repository>/<module>` convention:
-```
-module github.com/example/my-plugin
-```
+### - Objective :
+Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype your Mattermost sessions : 
 
-3. `.golangci.yml` with your Go module path:
-```yml
-linters-settings:
-  # [...]
-  goimports:
-    local-prefixes: github.com/example/my-plugin
-```
+* Full whiteboard creation with shapes, text, colors, post-its, arrow, and so much more
+* You can add who can watch or edit the jam during the session
+* You can download your jams and send them directly to everyone
+* You can add a small resume of the session so everyone can remember or understand what happened during the jam session
+* Jam versionning that allows you to look each versions of the same jam
+* Resume system that save all the jams at the end of the session, and allows you to consult them at any time
+* tag system to find easily any jam in your history with keywords
+* reporting system so the admin can see what are MattJam stats 
+* possibility to create call sessions in same time as jam sessions so there is no need of another plugin
 
 Build your plugin:
 ```
