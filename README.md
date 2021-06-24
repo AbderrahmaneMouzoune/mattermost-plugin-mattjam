@@ -13,7 +13,7 @@ TABLE OF CONTENTS
 * [Requirements](#requirements)
 * [Contribute](#contribute)
 * [Versions](#versions)
-* [Q&A](#q-a)
+* [Q&A](#qa)
 * [Copyright](#copyright)
 
 ## Introduction
