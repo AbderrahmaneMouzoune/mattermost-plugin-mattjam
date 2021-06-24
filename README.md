@@ -1,5 +1,5 @@
-
 # MattJam [![Release](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/assets/release-img.svg)](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/releases/latest)
+![Logo MattJam](https://user-images.githubusercontent.com/45047261/123288194-a090c500-d50f-11eb-9ffe-17d4f453b9af.png)
 
 The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
 directly in the chat or during call sessions. MattJam provides a fun and easy way 
@@ -17,6 +17,9 @@ TABLE OF CONTENTS
 * [Copyright](#copyright)
 
 ## Introduction
+
+![Preview plugin](https://user-images.githubusercontent.com/45047261/123287901-658e9180-d50f-11eb-8386-d3209459eda6.png)
+
 
 ### Objective :
 Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype your Mattermost sessions : 
