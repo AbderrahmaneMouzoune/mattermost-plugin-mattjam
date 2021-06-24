@@ -1,5 +1,5 @@
 
-# MattJam [![CircleCI branch](https://img.shields.io/circleci/project/github/mattermost/mattermost-plugin-starter-template/master.svg)](https://circleci.com/gh/mattermost/mattermost-plugin-starter-template)
+# MattJam
 
 
 The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
