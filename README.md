@@ -1,6 +1,5 @@
 
-# MattJam
-
+# MattJam [![Release](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/assets/release-img.svg)](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/releases/latest)
 
 The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
 directly in the chat or during call sessions. MattJam provides a fun and easy way 
@@ -9,20 +8,17 @@ to collaborate during team projects and animate working and brainstorming sessio
 TABLE OF CONTENTS
 ------------------
 
-* Introduction
-* Full Description
-* Status
-* Requirements
-* Instructions
-* Configuration
-* Wanted Collaboration
-* Versions
-* FAQ
-* Copyright
+* [Introduction](#introduction)
+* [Status](#status)
+* [Requirements](#requirements)
+* [Contribute](#contribute)
+* [Versions](#versions)
+* [Q&A](#q-a)
+* [Copyright](#copyright)
 
 ## Introduction
 
-### - Objective :
+### Objective :
 Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype your Mattermost sessions : 
 
 * Full whiteboard creation with shapes, text, colors, post-its, arrow, and so much more
@@ -35,95 +31,88 @@ Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype yo
 * reporting system so the admin can see what are MattJam stats 
 * possibility to create call sessions in same time as jam sessions so there is no need of another plugin
 
-Build your plugin:
-```
-make
-```
+## Status
 
-This will produce a single plugin file (with support for multiple architectures) for upload to your Mattermost server:
+*In developement* you can see more in the roadmap [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
 
-```
-dist/com.example.my-plugin.tar.gz
-```
+## Contribute
 
-## Development
+We welcome contributions for bug reports, issues, feature requests, feature implementations, and pull requests. Feel free to file a new issue 😃
 
-To avoid having to manually install your plugin, build and deploy your plugin using one of the following options.
+For a complete guide on contributing to the plugin, see the [Contribution Guidelines](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/CONTRIBUTING.md).
 
-### Deploying with Local Mode
+## Requirements
 
-If your Mattermost server is running locally, you can enable [local mode](https://docs.mattermost.com/administration/mmctl-cli-tool.html#local-mode) to streamline deploying your plugin. Edit your server configuration as follows:
+* Golang >1.16
+* Npm > 7.15
 
-```json
-{
-    "ServiceSettings": {
-        ...
-        "EnableLocalMode": true,
-        "LocalModeSocketLocation": "/var/tmp/mattermost_local.socket"
-    }
-}
-```
 
-and then deploy your plugin:
-```
-make deploy
-```
+| Operating System   | Technical Requirement              |
+| ------------------ |:---------------------------------- |
+| Windows            | Windows 7, 8.1, and 10             |
+| Mac                | MacOS 10.12+                       |
+| Linux              | Ubuntu LTS releases 18.04 or later |
 
-You may also customize the Unix socket path:
-```
-export MM_LOCALSOCKETPATH=/var/tmp/alternate_local.socket
-make deploy
-```
+Though not officially supported, the Linux desktop app also runs on RHEL/CentOS 7+.
 
-If developing a plugin with a webapp, watch for changes and deploy those automatically:
-```
-export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_TOKEN=j44acwd8obn78cdcx7koid4jkr
-make watch
-```
+| Browser            | Technical Requirement              |
+| ------------------ |:---------------------------------- |
+| Chrome             | v77+                               |
+| Firefox            | v68+                               |
+| Edge               | v44+                               |
+| Safari             | v12+                               |
 
-### Deploying with credentials
+## Versions
 
-Alternatively, you can authenticate with the server's API with credentials:
-```
-export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_USERNAME=admin
-export MM_ADMIN_PASSWORD=password
-make deploy
-```
+If you want to see each release you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/tags)
 
-or with a [personal access token](https://docs.mattermost.com/developer/personal-access-tokens.html):
-```
-export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_TOKEN=j44acwd8obn78cdcx7koid4jkr
-make deploy
-```
+If you want to see how each versions work you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
+
+If you want to see the structure of the project you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/wiki/How-we-see-our-project-%3F)
 
 ## Q&A
 
-### How do I make a server-only or web app-only plugin?
+### How do I install the plugin?
+I can download it [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/tags)
 
-Simply delete the `server` or `webapp` folders and remove the corresponding sections from `plugin.json`. The build scripts will skip the missing portions automatically.
+1. Log into Mattermost as a system admin
+2. In the upper-left corner, select your username, then System Console
+3. On the left, under Plugins, select Plugin Management
+4. Find "upload a plugin" and upload the tar.gz file download [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/tags)
+5. For Enable Plugins, select true
+6. Save changes at the bottom
 
-### How do I include assets in the plugin bundle?
+### How do I create a jam?
+In the concerned chat bar, type ```/mattjam``` then press ```enter```.
 
-Place them into the `assets` directory. To use an asset at runtime, build the path to your asset and open as a regular file:
+### How do I save my jam ?
+It is an automatic backup, which stops at the end of the jam session.
 
-```go
-bundlePath, err := p.API.GetBundlePath()
-if err != nil {
-    return errors.Wrap(err, "failed to get bundle path")
-}
+### How do I find the jams I have participated in?
+Go to the « Jam History » channel on the left sidebar of Mattermost.
 
-profileImage, err := ioutil.ReadFile(filepath.Join(bundlePath, "assets", "profile_image.png"))
-if err != nil {
-    return errors.Wrap(err, "failed to read profile image")
-}
+### How do I share a jam with other people?
+When you move the mouse over the jam area or from the jam history channel, a menu of options appears: choose the icon (ajouter l’icône)
 
-if appErr := p.API.SetProfileImage(userID, profileImage); appErr != nil {
-    return errors.Wrap(err, "failed to set profile image")
-}
-```
+### Can I join a jam in progress?
+Yes, via the share link, the « Jam History" channel or via the relevant chat if you are a member.
 
-### How do I build the plugin with unminified JavaScript?
-Setting the `MM_DEBUG` environment variable will invoke the debug builds. The simplist way to do this is to simply include this variable in your calls to `make` (e.g. `make dist MM_DEBUG=1`).
+### Can more than one person edit the jam?
+Currently, any participant has the possibility to contribute to the jam.
+
+### Can I make a jam on a call session?
+This is not yet possible directly from our plugin, but the call function will be available in version 4.0.
+
+# Copyright
+
+License MIT.
+
+Thanks to :
+* Olivia Pinto
+* Lucas Audon
+* Agathe Frangeul
+* Manon Landrin
+* Hugo Custodio
+* Ryan Fennane
+* Abderrahmane Mouzoune
+* Jitsi plugin
