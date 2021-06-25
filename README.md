@@ -20,7 +20,8 @@ The MattJam plugin is a free open source software for Mattermost that provides t
 directly in the chat or during call sessions. MattJam provides a fun and easy way 
 to collaborate during team projects and animate working and brainstorming sessions even in remote. 
 
-![Preview plugin](https://user-images.githubusercontent.com/45047261/123287901-658e9180-d50f-11eb-8386-d3209459eda6.png)
+![Preview plugin](https://user-images.githubusercontent.com/45047261/123388566-37559400-d599-11eb-88e4-051457a56d59.png)
+
 
 *In developement* you can see more in the roadmap [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
 
