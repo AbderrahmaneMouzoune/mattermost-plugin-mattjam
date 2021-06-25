@@ -1,28 +1,31 @@
 # MattJam [![Release](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/assets/release-img.svg)](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/releases/latest)
 ![Logo MattJam](https://user-images.githubusercontent.com/45047261/123288194-a090c500-d50f-11eb-9ffe-17d4f453b9af.png)
 
-The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
-directly in the chat or during call sessions. MattJam provides a fun and easy way 
-to collaborate during team projects and animate working and brainstorming sessions even in remote. 
+**Maintainer:** [Abderrahmane Mouzoune](https://github.com/AbderrahmaneMouzoune)
 
 TABLE OF CONTENTS
 ------------------
 
 * [Introduction](#introduction)
-* [Status](#status)
-* [Requirements](#requirements)
-* [Contribute](#contribute)
+* [Features](#features)
 * [Versions](#versions)
+* [Contribute](#contribute)
 * [Q&A](#qa)
+* [Requirements](#requirements)
 * [Copyright](#copyright)
 
 ## Introduction
 
+The MattJam plugin is a free open source software for Mattermost that provides the possibility to create jams 
+directly in the chat or during call sessions. MattJam provides a fun and easy way 
+to collaborate during team projects and animate working and brainstorming sessions even in remote. 
+
 ![Preview plugin](https://user-images.githubusercontent.com/45047261/123287901-658e9180-d50f-11eb-8386-d3209459eda6.png)
 
+*In developement* you can see more in the roadmap [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
 
-### Objective :
-Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype your Mattermost sessions : 
+## Features
+Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype your Mattermost sessions, you can acces to all of this features with ```/mattjam``` :
 
 * Full whiteboard creation with shapes, text, colors, post-its, arrow, and so much more
 * You can add who can watch or edit the jam during the session
@@ -34,37 +37,6 @@ Our MattJam FOSS is an all-in-one plugin has so much functionnalities to hype yo
 * reporting system so the admin can see what are MattJam stats 
 * possibility to create call sessions in same time as jam sessions so there is no need of another plugin
 
-## Status
-
-*In developement* you can see more in the roadmap [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
-
-## Contribute
-
-We welcome contributions for bug reports, issues, feature requests, feature implementations, and pull requests. Feel free to file a new issue 😃
-
-For a complete guide on contributing to the plugin, see the [Contribution Guidelines](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/CONTRIBUTING.md).
-
-## Requirements
-
-* Golang >1.16
-* Npm > 7.15
-
-
-| Operating System   | Technical Requirement              |
-| ------------------ |:---------------------------------- |
-| Windows            | Windows 7, 8.1, and 10             |
-| Mac                | MacOS 10.12+                       |
-| Linux              | Ubuntu LTS releases 18.04 or later |
-
-Though not officially supported, the Linux desktop app also runs on RHEL/CentOS 7+.
-
-| Browser            | Technical Requirement              |
-| ------------------ |:---------------------------------- |
-| Chrome             | v77+                               |
-| Firefox            | v68+                               |
-| Edge               | v44+                               |
-| Safari             | v12+                               |
-
 ## Versions
 
 If you want to see each release you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/tags)
@@ -72,6 +44,12 @@ If you want to see each release you can see that [here](https://github.com/Abder
 If you want to see how each versions work you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/projects)
 
 If you want to see the structure of the project you can see that [here](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/wiki/How-we-see-our-project-%3F)
+
+## Contribute
+
+We welcome contributions for bug reports, issues, feature requests, feature implementations, and pull requests. Feel free to file a new issue 😃
+
+For a complete guide on contributing to the plugin, see the [Contribution Guidelines](https://github.com/AbderrahmaneMouzoune/mattermost-plugin-mattjam/blob/master/CONTRIBUTING.md).
 
 ## Q&A
 
@@ -106,16 +84,37 @@ Currently, any participant has the possibility to contribute to the jam.
 ### Can I make a jam on a call session?
 This is not yet possible directly from our plugin, but the call function will be available in version 4.0.
 
-# Copyright
+## Requirements
+
+* Golang >1.16
+* Npm > 7.15
+
+
+| Operating System   | Technical Requirement              |
+| ------------------ |:---------------------------------- |
+| Windows            | Windows 7, 8.1, and 10             |
+| Mac                | MacOS 10.12+                       |
+| Linux              | Ubuntu LTS releases 18.04 or later |
+
+Though not officially supported, the Linux desktop app also runs on RHEL/CentOS 7+.
+
+| Browser            | Technical Requirement              |
+| ------------------ |:---------------------------------- |
+| Chrome             | v77+                               |
+| Firefox            | v68+                               |
+| Edge               | v44+                               |
+| Safari             | v12+                               |
+
+## Copyright
 
 License MIT.
 
 Thanks to :
-* Olivia Pinto
-* Lucas Audon
-* Agathe Frangeul
-* Manon Landrin
-* Hugo Custodio
-* Ryan Fennane
-* Abderrahmane Mouzoune
-* Jitsi plugin
+* [Olivia Pinto](https://www.linkedin.com/in/olivia-pinto-3a8b9779/)
+* [Lucas Audon](https://www.linkedin.com/in/lucas-audon-871784137/)
+* [Agathe Frangeul](https://www.linkedin.com/in/agathe-frangeul-14391117a/)
+* [Manon Landrin](https://www.linkedin.com/in/manon-landrin/)
+* [Hugo Custodio](https://www.linkedin.com/in/hugo-custodio/)
+* [Ryan Fennane](github.com/RyanFennane)
+* [Abderrahmane Mouzoune](github.com/AbderrahmaneMouzoune)
+* [Jitsi plugin](github.com/mattermost/mattermost-plugin-jitsi)
